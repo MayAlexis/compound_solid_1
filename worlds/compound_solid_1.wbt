@@ -2,12 +2,56 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.6931032800836722 0.6931032800836722 0.1980295085953349 0.75
-  position 1.2 1.6 2.3
+  orientation -0.6434593242153304 0.760046634133154 0.09104510982591983 0.28051509872592867
+  position 0.6598911896862294 0.6612945735177392 2.9622585426334718
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 Floor {
+}
+Solid {
+  translation 0.3000000000000001 0.4100000000000002 0
+  children [
+    Group {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.12549019607843137 0.2901960784313726 0.5294117647058824
+          }
+          geometry Cylinder {
+            height 0.3
+            radius 0.05
+          }
+        }
+        Transform {
+          translation 0 0.15 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.6431372549019608 0 0
+              }
+              geometry Sphere {
+                radius 0.1
+              }
+            }
+          ]
+        }
+        Transform {
+          translation 0 -0.15 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.6431372549019608 0 0
+              }
+              geometry Sphere {
+                radius 0.1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
